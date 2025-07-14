@@ -29,9 +29,7 @@ function Signup() {
       navigate('/login');
     } catch (err) {
       setIsLoading(false);
-      console.error("Axios error:", err.response ? err.response.data : err.message);
-      console.error("Axios error:", message);
-      alert('Error submitting data');
+      alert(message);
     }
   };
 
