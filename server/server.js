@@ -3,7 +3,6 @@ import bodyParser from 'body-parser';
 import connectDB from './config/db.js';
 import authRoutes from './routes/auth.js';
 import setMiddleware from './middleware/index.js';
-import limiter from './middleware/rateLimit.js';
 
 const app = express();
 
